@@ -43,7 +43,7 @@ pipeline {
                 input 'Deploy to Production?'
                 milestone(1)
                 kubernetesDeploy(
-                    kubeconfigId: 'kubeconfig',
+                    kubeconfigId: 'quixotic-moment-252916',
                     configs: 'train-schedule-kube.yml',
                     enableConfigSubstitution: true
                 )
